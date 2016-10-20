@@ -35,7 +35,6 @@ module.exports.tests.success = function(test, common) {
         t.equal(esclient, 'this is the esclient');
         t.deepEqual(cmd, {
           index: 'indexName value',
-          searchType: 'dfs_query_then_fetch',
           body: 'this is the query body'
         });
 
@@ -100,7 +99,6 @@ module.exports.tests.success = function(test, common) {
         t.equal(esclient, 'this is the esclient');
         t.deepEqual(cmd, {
           index: 'indexName value',
-          searchType: 'dfs_query_then_fetch',
           body: 'this is the query body'
         });
 
@@ -164,7 +162,6 @@ module.exports.tests.success = function(test, common) {
         t.equal(esclient, 'this is the esclient');
         t.deepEqual(cmd, {
           index: 'indexName value',
-          searchType: 'dfs_query_then_fetch',
           body: 'this is the query body'
         });
 
@@ -236,7 +233,6 @@ module.exports.tests.success = function(test, common) {
         t.equal(esclient, 'this is the esclient');
         t.deepEqual(cmd, {
           index: 'indexName value',
-          searchType: 'dfs_query_then_fetch',
           body: 'this is the query body'
         });
 
@@ -321,7 +317,6 @@ module.exports.tests.timeout = function(test, common) {
         t.equal(esclient, 'this is the esclient');
         t.deepEqual(cmd, {
           index: 'indexName value',
-          searchType: 'dfs_query_then_fetch',
           body: 'this is the query body'
         });
 

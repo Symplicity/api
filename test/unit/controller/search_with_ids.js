@@ -36,7 +36,6 @@ module.exports.tests.success = (test, common) => {
         t.equal(esclient, 'this is the esclient');
         t.deepEqual(cmd, {
           index: 'indexName value',
-          searchType: 'dfs_query_then_fetch',
           body: 'this is the query body'
         });
 
