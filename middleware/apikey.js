@@ -1,7 +1,8 @@
 
 function middleware(req, res, next){
-    if (req.query.api_key != 'i-am-very-secure') {
-	return res.status(401).json("I need an API key.");
+    var apikey = process.env.PELIAS_API_KEY;
+    if (req.query.api_key !== apikey) {
+	return res.status(401).json('I need an API key. Make sure one is configured in your API in PELIAS_API_KEY env var.');
     } else {
 	next();
     }
